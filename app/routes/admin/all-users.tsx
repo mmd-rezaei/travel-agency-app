@@ -1,6 +1,14 @@
+import {Header} from "componets"
 const AllUsers = () => {
   return (
-    <div>User Table</div>
+    <main className="dashboard wrapper">
+      <Header
+        title="Trips page"
+        description="Check out our current users in real time"
+      />
+
+      All Users Page Content
+    </main>
   )
 }
 
