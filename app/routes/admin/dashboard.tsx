@@ -1,17 +1,16 @@
+
 import {Header, StatsCard, TripCard} from "componets"
 import { dashboardStats, user, allTrips } from "~/constants";
 
-
 const dashboard = () => {
   const { totalUsers, usersJoined, totalTrips, TripsCreated, userRole} = dashboardStats;
-
+  const user = { name: 'Adrian'}
   return (
     <main className="dashboard wrapper">
       <Header
         title={`welcome ${user?.name ?? 'Guest'}👋🏻`}
         description="Track activity, trends and popular destinations in real time"
       />
-
       <section className="flex flex-col gap-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
           <StatsCard
@@ -56,5 +55,4 @@ const dashboard = () => {
     </main>
   )
 }
-
 export default dashboard
